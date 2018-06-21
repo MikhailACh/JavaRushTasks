@@ -14,6 +14,7 @@ import java.util.Set;
 /* 
 ClassLoader - что это такое?
 */
+
 public class Solution {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
         Set<? extends Animal> allAnimals = getAllAnimals(Solution.class.getProtectionDomain().getCodeSource().getLocation().getPath() + Solution.class.getPackage().getName().replaceAll("[.]", "/") + "/data");
