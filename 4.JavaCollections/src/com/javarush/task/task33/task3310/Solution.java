@@ -16,6 +16,10 @@ public class Solution {
         testStrategy(strategyThree, 100);
         StorageStrategy strategyFour = new OurHashBiMapStorageStrategy();
         testStrategy(strategyFour, 10000);
+        StorageStrategy strategyFive = new HashBiMapStorageStrategy();
+        testStrategy(strategyFive, 10000);
+        StorageStrategy strategySix = new DualHashBidiMapStorageStrategy();
+        testStrategy(strategySix, 10000);
     }
 
     // 6.2.1. Этот метод должен для переданного множества строк возвращать множество идентификаторов. Идентификатор для каждой отдельной строки нужно получить, используя shortener.

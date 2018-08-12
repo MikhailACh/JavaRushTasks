@@ -11,8 +11,6 @@ public class OurHashMapStorageStrategy implements StorageStrategy {
     float loadFactor = DEFAULT_LOAD_FACTOR;
 
     // реализация интерфейса
-
-
     @Override
     public boolean containsKey(Long key) {
         for (Entry e : table) {
@@ -53,9 +51,13 @@ public class OurHashMapStorageStrategy implements StorageStrategy {
 
     @Override
     public Long getKey(String value) {
-        for (Entry e : table) {
-            if (e.getValue().equals(value))
-                return e.getKey();
+        if (value == null)
+            return 0l;
+        for (Entry tableEntry : table) {
+            for (Entry e = tableEntry; e != null; e = e.next) {
+                if (e.getValue().equals(value))
+                    return e.getKey();
+            }
         }
         return null;
     }
