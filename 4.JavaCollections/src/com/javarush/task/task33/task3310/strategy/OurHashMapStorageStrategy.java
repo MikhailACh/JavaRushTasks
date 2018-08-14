@@ -62,6 +62,19 @@ public class OurHashMapStorageStrategy implements StorageStrategy {
         return null;
     }
 
+    /*@Override
+    public Long getKey(String value) {
+
+        if (value == null)
+            return 0l;
+        for (Entry aTable : table) {
+            for (Entry e = aTable; e != null; e = e.next)
+                if (value.equals(e.value))
+                    return aTable.getKey();
+        }
+        return null;
+    }*/
+
     @Override
     public String getValue(Long key) {
         if (getEntry(key) == null)

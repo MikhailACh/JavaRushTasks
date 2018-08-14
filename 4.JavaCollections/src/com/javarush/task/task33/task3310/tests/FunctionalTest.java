@@ -46,7 +46,8 @@ public class FunctionalTest {
 
     @Test
     public void testOurHashMapStorageStrategy() {
-        Shortener shortener = new Shortener(new OurHashMapStorageStrategy());
+        OurHashMapStorageStrategy hashMapStorageStrategy = new OurHashMapStorageStrategy();
+        Shortener shortener = new Shortener(hashMapStorageStrategy);
         testStorage(shortener);
     }
 
