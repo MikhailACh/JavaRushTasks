@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.log.1
 
 # BlueJ files
 *.ctxt
@@ -28,5 +29,8 @@ hs_err_pid*
 /.idea/
 *.properties
 *.iml
-*.log
+.gitignore
 *.png
+
+# other
+*.html
