@@ -1,6 +1,5 @@
 package com.javarush.task.task28.task2810.view;
 
-import com.google.common.primitives.Bytes;
 import com.javarush.task.task28.task2810.Controller;
 import com.javarush.task.task28.task2810.vo.Vacancy;
 import org.jsoup.Jsoup;
