@@ -16,7 +16,7 @@ public class Solution {
     public Solution(Connection connection) {
         this.connection = connection;
     }
-    
+
     public List<User> getUsers() {
         String query = "select ID, DISPLAYED_NAME, LEVEL, LESSON from USER";
 
