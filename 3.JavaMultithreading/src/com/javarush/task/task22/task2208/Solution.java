@@ -25,7 +25,7 @@ public class Solution {
         for (Map.Entry<String, String> pair : params.entrySet())
             if (pair.getValue() != null)
                 sb.append(String.format(" and %s = '%s'", pair.getKey(), pair.getValue()));
-            
+
         return sb.toString().replaceFirst("\\s+and\\s+", "");
     }
 }
