@@ -17,7 +17,7 @@ public class Solution {
 
         String template10 = "(\\(\\d{3}\\))?(\\d+)-?(\\d+)-?(\\d+)";
         String template12 = "\\+\\d+(\\(\\d{3}\\))?(\\d+)-?(\\d+)-?(\\d+)";
-        
+
         if (telNumber.startsWith("+"))
             return telNumber.matches(template12);
         if (Character.isDigit(telNumber.charAt(0)) || telNumber.startsWith("("))
